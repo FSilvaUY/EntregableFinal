@@ -1,0 +1,15 @@
+{% extends "padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+    
+<center><h1> Buscar Libros </h1></center>
+<body>
+    <center>
+        <br>
+        <form action="{% url 'buscar_libro' %}" method="GET">
+            <input type="text" name="nombre" placeholder="Buscar Libro">
+            <input type="submit" value="Buscar">
+        </form>
+    </center>
+</body>
+{% endblock %}

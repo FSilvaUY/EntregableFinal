@@ -1,0 +1,19 @@
+{% load static %}
+
+<center><h1>Crear libro</h1></center>
+<body>
+    <br>
+    <center>
+        <form action="" method="POST">{% csrf_token %}
+        
+            <table>
+        
+                <center>{{ miFormulario.as_table }}
+        
+            </table>
+        <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </center>
+    <br>
+</body>

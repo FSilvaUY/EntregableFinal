@@ -1,0 +1,20 @@
+{% extends "padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+    
+<center><h1> Resultados de busqueda de {{nombre}} </h1></center>
+<body>
+    <center>
+        {%if nombre %}
+        <ul> 
+            {% for nombre in nombre %}
+            <li>Nombre de Libro: {{nombre.nombre}}</li>
+            <li>Autor:            {{nombre.autor}}</li>
+            <li>Descripcion:      {{nombre.descripcion}}</li>
+            {% endfor %}
+        </ul>
+        
+        {% endif %}
+    </center>
+</body>
+{% endblock %}
